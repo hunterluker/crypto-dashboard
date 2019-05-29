@@ -24,6 +24,7 @@ export class AppProvider extends React.Component {
     let coinList = (await cc.coinList()).Data;
 
     this.setState({ coinList });
+    console.log(coinList);
   };
 
   confirmFavorites = () => {
