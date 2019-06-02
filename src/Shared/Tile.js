@@ -12,14 +12,14 @@ export const Tile = styled.div`
   padding: 10px;
 `;
 
-export const SelectableTitle = styled(Tile)`
+export const SelectableTile = styled(Tile)`
   &:hover {
     cursor: pointer;
     ${greenBoxShadow}
   }
 `;
 
-export const DeletableTile = styled(SelectableTitle)`
+export const DeletableTile = styled(SelectableTile)`
   &:hover {
     cursor: pointer;
     ${redBoxShadow}
