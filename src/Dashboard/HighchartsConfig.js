@@ -1,8 +1,10 @@
-export default function() {
+export default function(historical) {
   return {
     title: {
       text: ''
     },
+
+    xAxis: { type: 'datetime' },
 
     yAxis: {
       title: {
@@ -24,12 +26,7 @@ export default function() {
       }
     },
 
-    series: [
-      {
-        name: 'Installation',
-        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
-      }
-    ],
+    series: historical,
 
     responsive: {
       rules: [

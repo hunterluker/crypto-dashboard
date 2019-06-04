@@ -16,7 +16,7 @@ export default function() {
       {({ prices }) => (
         <PriceGrid>
           {prices.map((price, index) => (
-            <PriceTile price={price} index={index} />
+            <PriceTile key={index} price={price} index={index} />
           ))}
         </PriceGrid>
       )}
